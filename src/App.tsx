@@ -5,7 +5,7 @@ import Cart from "./routes/Cart";
 function App() {
 	return (
 		<div className="App">
-			{/* <NavBar /> */}
+			<NavBar />
 			<Cart />
 		</div>
 	);

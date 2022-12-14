@@ -1,17 +1,20 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
+	let navs: string[][];
+	navs = [
+		["Home", "/"],
+		["Products", "/products"],
+		["Cart", "/cart"],
+	];
 	return (
 		<div className="bg-base flex flex-between">
 			<h2 className="text-white px-3 py-2">DODO4U</h2>
-			{/* {[
-				["Home", "/dashboard"],
-				["Team", "/team"],
-			].map(([title, url]) => (
-				<a href={url} className="px-3 py-2 text-white">
-					{title}
-				</a>
-			))} */}
+			<div>
+				{navs.map(([title, url]) => (
+					<Link to={url}>{title}</Link>
+				))}
+			</div>
 		</div>
 	);
 }
