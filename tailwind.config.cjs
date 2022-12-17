@@ -8,6 +8,12 @@ module.exports = {
 			base: "#E2B419",
 			white: "#FFF",
 		},
+		fontFamily: {
+			poppins: "Poppins",
+		},
+		backgroundImage: {
+			"hero-bg": "url('./assets/Herobg.png')",
+		},
 	},
 	plugins: [],
 };

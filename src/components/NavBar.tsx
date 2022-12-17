@@ -1,19 +1,25 @@
 import { Link } from "react-router-dom";
-
+import cart from "../assets/cart.png";
 function NavBar() {
 	let navs: string[][];
 	navs = [
 		["Home", "/"],
 		["Products", "/products"],
-		["Cart", "/cart"],
 	];
 	return (
-		<div className="bg-base flex flex-between">
-			<h2 className="text-white px-3 py-2">DODO4U</h2>
-			<div>
+		<div className="bg-base flex justify-between items-center w-full h-20 px-12">
+			<Link to="/">
+				<h2 className="text-white text-2xl font-bold">DODO4U</h2>
+			</Link>
+			<div className="flex gap-x-8">
 				{navs.map(([title, url]) => (
-					<Link to={url}>{title}</Link>
+					<Link to={url} className="text-white font-bold text-lg">
+						{title}
+					</Link>
 				))}
+				<Link to="/cart">
+					<img src={cart} alt="cart" />
+				</Link>
 			</div>
 		</div>
 	);
