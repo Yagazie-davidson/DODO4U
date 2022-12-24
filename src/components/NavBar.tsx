@@ -9,11 +9,11 @@ function NavBar() {
 	return (
 		<div className="bg-base flex justify-between items-center w-full h-20 px-12">
 			<Link to="/">
-				<h2 className="text-white text-2xl font-bold">DODO4U</h2>
+				<h2 className="text-white text-2xl font-bold font-Josefin">DODO4U</h2>
 			</Link>
 			<div className="flex gap-x-8">
 				{navs.map(([title, url]) => (
-					<Link to={url} className="text-white font-bold text-lg">
+					<Link to={url} className="text-white font-bold text-lg font-Josefin	">
 						{title}
 					</Link>
 				))}
