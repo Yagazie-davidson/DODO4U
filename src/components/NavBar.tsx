@@ -7,7 +7,7 @@ function NavBar() {
 		["Products", "/products"],
 	];
 	return (
-		<div className="bg-base flex justify-between items-center w-full h-20 px-12">
+		<div className="bg-base flex justify-between items-center w-full h-20 px-14">
 			<Link to="/">
 				<h2 className="text-white text-2xl font-bold font-Josefin">DODO4U</h2>
 			</Link>
